@@ -3,15 +3,15 @@
     <div class="hero w-full">
       <Header />
       <div class="content text-center">
-        <h1 class="mb-[21px]">We’re Getting Ready</h1>
+        <h1 class="mb-[21px]">{{ $tc("we-re") }}</h1>
         <TimeGettingReadyBox />
         <FormEmail />
       </div>
     </div>
     <AboutUs />
     <OurGames />
-    <OutPartners />
-    <Footer/>
+    <OurPartners />
+    <Footer />
   </div>
 </template>
 <script>
@@ -20,7 +20,7 @@ import Header from "../components/Header/Header.vue";
 import FormEmail from "../components/FormEmail/FormEmail.vue";
 import AboutUs from "./AboutUs.vue";
 import OurGames from "./OurGames.vue";
-import OutPartners from "./OutPartners.vue";
+import OurPartners from "./OurPartners.vue";
 import Footer from "../components/Footer/Footer.vue";
 
 export default {
@@ -30,7 +30,7 @@ export default {
     FormEmail,
     AboutUs,
     OurGames,
-    OutPartners,
+    OurPartners,
     Footer,
   },
 };

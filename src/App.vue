@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <!-- <div class="text-secondary-300">123</div>
-   <p class="likes">{{$tc("nav.about-us")}}</p> -->
     <router-view />
   </div>
 </template>

@@ -9,20 +9,21 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locale './src/locales/**/*.json'"
   },
   "dependencies": {
+    "ant-design-vue": "^1.6.4",
     "autoprefixer": "^9.8.8",
     "axios": "^0.26.0",
     "core-js": "^3.6.5",
+    "country-code-lookup": "^0.0.20",
     "express": "^4.18.1",
+    "flag-icons": "^6.1.1",
     "i18next-vue": "^3.0.0",
     "swiper": "^5.4.5",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-i18n": "^8.0.0",
     "vue-router": "^3.2.0",
-    "vuex": "^3.4.0",
-    "ant-design-vue": "^1.6.4",
-    "flag-icons": "^6.1.1",
-    "country-code-lookup": "^0.0.20"
+    "vue-scroll-behavior": "^0.3.0",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@ant-design/colors": "^3.2.1",

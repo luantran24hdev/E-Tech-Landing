@@ -3,28 +3,28 @@
     <div class="flex items-center">
       <div class="flex flex-col items-center">
         <span class="text-6xl font-black mb-3">30</span>
-        <span class="text-base font-bold">Days</span>
+        <span class="text-base font-bold">{{ $tc("day") }}</span>
       </div>
     </div>
     <span> <TwoPoint /></span>
     <div class="flex items-center">
       <div class="flex flex-col items-center">
         <span class="text-6xl font-black mb-3">18</span>
-        <span class="text-base font-bold">Hours</span>
+        <span class="text-base font-bold">{{ $tc("hours") }}</span>
       </div>
     </div>
     <span> <TwoPoint /></span>
     <div class="flex items-center">
       <div class="flex flex-col items-center">
         <span class="text-6xl font-black mb-3">20</span>
-        <span class="text-base font-bold">Minutes</span>
+        <span class="text-base font-bold">{{ $tc("min") }}</span>
       </div>
     </div>
     <span> <TwoPoint /></span>
     <div class="flex items-center">
       <div class="flex flex-col items-center">
         <span class="text-6xl font-black mb-3">11</span>
-        <span class="text-base font-bold">Second</span>
+        <span class="text-base font-bold">{{ $tc("sec") }}</span>
       </div>
     </div>
   </div>

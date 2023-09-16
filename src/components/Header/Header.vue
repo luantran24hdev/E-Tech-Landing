@@ -2,38 +2,54 @@
   <div class="header flex">
     <div class="header__wp w-full h-full flex">
       <div class="logo">
-        <a href="">
+        <router-link to="/" class="hover:text-secondary-300">
           <img src="@/assets/images/logo.png" alt="" />
-        </a>
+        </router-link>
       </div>
 
       <ul class="flex">
-        <li><a href=""> About us </a></li>
-        <li><a href=""> Games </a></li>
-        <li><a href=""> Partners </a></li>
-        <li><a href=""> Contact us </a></li>
-        <!-- <SelectLanguage
-          :options="['Viet nam', ' English']"
+        <li>
+          <router-link to="/about-us" class="hover:text-secondary-300">
+            {{ $tc("nav.about-us") }}
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/our-games" class="hover:text-secondary-300">
+            {{ $tc("nav.games") }}
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/our-partners" class="hover:text-secondary-300">
+            {{ $tc("nav.partners") }}
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/contact-us" class="hover:text-secondary-300">
+            {{ $tc("nav.contact-us") }}
+          </router-link>
+        </li>
+        <SelectLanguage
+          :options="['Vietnamese', ' English']"
           :default="'English'"
           class="select"
           @input="alert(displayToKey($event))"
-        /> -->
+        />
       </ul>
     </div>
   </div>
 </template>
 <script>
-// import SelectLanguage from "../SelectLanguage.vue";
+import SelectLanguage from "../SelectLanguage.vue";
 export default {
   components: {
-    // SelectLanguage,
+    SelectLanguage,
   },
 };
 </script>
 <style lang="scss" scoped>
 .header {
   width: 100%;
-margin-bottom: 210px;
+  margin-bottom: 210px;
   align-items: center;
   &__wp {
     padding: 20px 79px 0px 79px;

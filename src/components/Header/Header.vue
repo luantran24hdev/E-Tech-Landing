@@ -98,6 +98,9 @@ export default {
   width: 100%;
   margin-bottom: 210px;
   align-items: center;
+  li:nth-last-child(1) {
+  margin-top: -8px;
+}
   .navbar-mobile {
     position: fixed;
     width: 100%;
@@ -121,6 +124,8 @@ export default {
       li {
         padding: 24px 0px;
       }
+     
+
     }
   }
   .navbar {

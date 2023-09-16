@@ -20,6 +20,9 @@ module.exports = {
       lightPink: "#CABDFD",
       lightSky: "#B0E4FB",
       lightGray: "#9A9FA5",
+      sky: {
+        500: "linear-gradient(180deg, rgba(0, 10, 255, 0.50) 0%, rgba(0, 0, 0, 0.00) 136.61%), linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%)"
+      },
       cyan: {
         100: "rgba(255, 255, 255, 0.3)",
         200: "rgba(255, 255, 255, 0.04)",

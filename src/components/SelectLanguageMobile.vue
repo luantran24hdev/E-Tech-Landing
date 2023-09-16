@@ -1,16 +1,10 @@
 <template>
-  <!-- <a-select class="selectLang" v-model="selectedValue" style="width: 200px" @change="handleChange">
-    <a-select-opt-group>
-      <template slot="label"> Manager </template>
-      <a-select-option value="vi">Vietnamese</a-select-option>
-      <a-select-option value="en">English</a-select-option>
-    </a-select-opt-group>
-  </a-select> -->
+
   <div class="select-language" @click="handleToggle">
     <div class="flag">
       <img src="../assets/images/flags/usFlag.svg" alt="" />
     </div>
-    <img src="../assets/images/arrowDown.svg" alt="" />
+    <img src="../assets/images/arrowDownMobile.svg" alt="" class="black-fill" />
     <div class="box-language" v-if="isSelected">
       <div class="item-list flex items-center">
         <img
@@ -63,9 +57,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 .select-language {
+  padding: 8px;
   cursor: pointer;
   display: flex;
   position: relative;
+  border-radius: 5px;
+  border: 1px solid #AFAFAF ;
+  background-color: #F6F6F6;
+  .black-fill {
+    fill: #000;
+  }
   .flag {
     width: 33px;
     height: 33px;
@@ -78,11 +79,12 @@ export default {
     height: 81px;
     border-radius: 8px;
     border: 1px solid #eee;
-    background: #fff;
+    background: #F6F6F6;
     padding: 8px;
     position: absolute;
-    top: 35px;
-    right: 0;
+    top: 55px;
+    left: 0px;
+   
     hr {
       height: 1px;
       background-color: #C4C4C4;

@@ -2,29 +2,29 @@
   <div class="box-time flex m-auto">
     <div class="flex items-center">
       <div class="flex flex-col items-center">
-        <span class="text-6xl font-black mb-3">30</span>
-        <span class="text-base font-bold">{{ $tc("day") }}</span>
+        <span class="sm:text-6xl text-4xl font-black mb-3 transition-all duration-500">30</span>
+        <span class="text-base sm:text-sm font-bold">{{ $tc("day") }}</span>
       </div>
     </div>
     <span> <TwoPoint /></span>
     <div class="flex items-center">
       <div class="flex flex-col items-center">
-        <span class="text-6xl font-black mb-3">18</span>
-        <span class="text-base font-bold">{{ $tc("hours") }}</span>
+        <span class="sm:text-6xl text-4xl font-black mb-3 transition-all duration-500">18</span>
+        <span class="lg:text-base sm:text-sm font-bold transition-all duration-500">{{ $tc("hours") }}</span>
       </div>
     </div>
     <span> <TwoPoint /></span>
     <div class="flex items-center">
       <div class="flex flex-col items-center">
-        <span class="text-6xl font-black mb-3">20</span>
-        <span class="text-base font-bold">{{ $tc("min") }}</span>
+        <span class="sm:text-6xl text-4xl font-black mb-3 transition-all duration-500">20</span>
+        <span class="lg:text-base sm:text-sm font-bold transition-all duration-500">{{ $tc("min") }}</span>
       </div>
     </div>
     <span> <TwoPoint /></span>
     <div class="flex items-center">
       <div class="flex flex-col items-center">
-        <span class="text-6xl font-black mb-3">11</span>
-        <span class="text-base font-bold">{{ $tc("sec") }}</span>
+        <span class="sm:text-6xl text-4xl font-black mb-3 transition-all duration-500">11</span>
+        <span class="lg:text-base sm:text-sm font-bold transition-all duration-500">{{ $tc("sec") }}</span>
       </div>
     </div>
   </div>
@@ -48,5 +48,11 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 870px) {
+  .box-time {
+    width: 100%;
+    padding: 10px;
+  }
 }
 </style>

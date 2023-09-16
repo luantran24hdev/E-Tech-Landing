@@ -3,15 +3,15 @@
     <p class="transition-all duration-500">
       {{ $tc("we-will") }}
     </p>
-    <EmailInput />
+    <EmailInputFooter />
   </div>
 </template>
 <script>
-import EmailInput from '../../components/EmailInput/EmailInput.vue'
+import EmailInputFooter from '../../components/EmailInput/EmailInputFooter.vue'
 export default {
   methods: {},
   components: {
-    EmailInput
+    EmailInputFooter
   },
 };
 </script>

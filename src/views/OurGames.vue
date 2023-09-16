@@ -12,7 +12,7 @@
     <div class="card">
       <div class="item-list flex flex-col">
         <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
+          <img src="../assets/images/cards/card-11.png" alt="" />
           <div class="card-item-info">
             <h5>E-Space</h5>
             <span
@@ -37,49 +37,7 @@
           > -->
         </div>
         <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
-          <div class="card-item-info">
-            <h5>E-Space</h5>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-            >
-          </div>
-          <!-- <h5>E-Space</h5>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-          > -->
-        </div>
-      </div>
-      <div class="item-list flex flex-col">
-        <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
-          <div class="card-item-info">
-            <h5>E-Space</h5>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-            >
-          </div>
-        </div>
-        <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
-          <div class="card-item-info">
-            <h5>E-Space</h5>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-            >
-          </div>
-          <!-- <h5>E-Space</h5>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-          > -->
-        </div>
-        <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
+          <img src="../assets/images/cards/card-10.png" alt="" />
           <div class="card-item-info">
             <h5>E-Space</h5>
             <span
@@ -96,7 +54,7 @@
       </div>
       <div class="item-list flex flex-col">
         <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
+          <img src="../assets/images/cards/card-9.png" alt="" />
           <div class="card-item-info">
             <h5>E-Space</h5>
             <span
@@ -106,7 +64,7 @@
           </div>
         </div>
         <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
+          <img src="../assets/images/cards/card-1.png" alt="" />
           <div class="card-item-info">
             <h5>E-Space</h5>
             <span
@@ -121,7 +79,7 @@
           > -->
         </div>
         <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
+          <img src="../assets/images/cards/card-2.png" alt="" />
           <div class="card-item-info">
             <h5>E-Space</h5>
             <span
@@ -138,7 +96,7 @@
       </div>
       <div class="item-list flex flex-col">
         <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
+          <img src="../assets/images/cards/card-3.png" alt="" />
           <div class="card-item-info">
             <h5>E-Space</h5>
             <span
@@ -148,7 +106,7 @@
           </div>
         </div>
         <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
+          <img src="../assets/images/cards/card-4.png" alt="" />
           <div class="card-item-info">
             <h5>E-Space</h5>
             <span
@@ -163,7 +121,7 @@
           > -->
         </div>
         <div class="card-item">
-          <img src="../assets/images/cards/bitmap.png" alt="" />
+          <img src="../assets/images/cards/card-5.png" alt="" />
           <div class="card-item-info">
             <h5>E-Space</h5>
             <span
@@ -178,11 +136,48 @@
           > -->
         </div>
       </div>
-      
-      
-      
-      
-     
+      <div class="item-list flex flex-col">
+        <div class="card-item">
+          <img src="../assets/images/cards/card-6.png" alt="" />
+          <div class="card-item-info">
+            <h5>E-Space</h5>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+            >
+          </div>
+        </div>
+        <div class="card-item">
+          <img src="../assets/images/cards/card-7.png" alt="" />
+          <div class="card-item-info">
+            <h5>E-Space</h5>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+            >
+          </div>
+          <!-- <h5>E-Space</h5>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+          > -->
+        </div>
+        <div class="card-item">
+          <img src="../assets/images/cards/card-8.png" alt="" />
+          <div class="card-item-info">
+            <h5>E-Space</h5>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+            >
+          </div>
+          <!-- <h5>E-Space</h5>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+          > -->
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -226,6 +221,14 @@ export default {};
     line-height: 140%; /* 19.6px */
   }
 }
+@media (max-width: 900px) {
+  .our-games-info {
+    width: 100%;
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
 .card {
   display: flex;
   margin-top: 80px;
@@ -261,6 +264,11 @@ export default {};
           letter-spacing: 0.9px;
         }
       }
+      @media (max-width: 900px) {
+        .card-item-info {
+          padding: 20px 12px;
+        }
+      }
 
       img {
         border-radius: 5px;
@@ -274,11 +282,30 @@ export default {};
       }
     }
     .card-item:nth-child(2) {
-        margin: 40px 0px;
+      margin: 40px 0px;
     }
   }
   //   &-item:nth-child(odd) {
   //     padding-top: 118px;
   //   }
+}
+@media (max-width: 900px) {
+  .card {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    .item-list {
+      width: 45%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .card {
+
+    .item-list {
+      width: 100%;
+    }
+  }
 }
 </style>

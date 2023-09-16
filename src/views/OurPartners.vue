@@ -1,13 +1,16 @@
 <template>
-  <div class="bg-our text-center ">
-   <div class="title"> Our Partners </div>
+  <div class="bg-our text-center">
+    <div class="title">Our Partners</div>
     <div class="max-w-7xl mx-auto pp">
       <div class="flex justify-between">
         <swiper :options="swiperBrandOptions" class="">
           <swiper-slide v-for="(imgSrc, index) in branchArr" :key="index">
-            <img :src="imgSrc.src" alt="" class="w-[260px] h-[100[px]" />
+            <img :src="imgSrc.src" alt="" class="item" />
           </swiper-slide>
-          <div class="swiper-button-prev transform rotate-180" slot="button-prev">
+          <div
+            class="swiper-button-prev transform rotate-180"
+            slot="button-prev"
+          >
             <SmdArrowButton direction="left" />
           </div>
           <div class="swiper-button-next" slot="button-next">
@@ -24,20 +27,20 @@ export default {
   data() {
     return {
       swiperBrandOptions: {
-        slidesPerView: 4,
+        slidesPerView: 6,
         spaceBetween: 30,
         breakpoints: {
           320: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 8,
           },
           480: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 15,
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 20,
           },
           1024: {
             slidesPerView: 4,
@@ -79,31 +82,56 @@ export default {
 </script>
 <style lang="scss" scoped>
 .bg-our {
-    background-color: #F6F6F6;
+  background-color: #f6f6f6;
+  padding: 20px 0 35px 0px;
 }
 .pp {
-  padding-bottom: 120px;
+  // padding-bottom: 120px;
+}
+.item {
+  width: 260px;
+  height: 100px;
 }
 
+@media (max-width: 920px) {
+  .item {
+    width: 200px;
+  }
+}
+@media (max-width: 520px) {
+  .item {
+    width: 100px;
+  }
+}
 .title {
-    color: #000;
-text-align: center;
+  color: #000;
+  text-align: center;
 
-font-family: "Playfair Display", serif;
-font-size: 60px;
-font-style: normal;
-font-weight: 900;
-line-height: 80px; /* 133.333% */
-letter-spacing: 3.6px;
-padding-top: 120px;
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 80px; /* 133.333% */
+  letter-spacing: 3.6px;
+  margin-bottom: 30px;
 }
-.swiper-button-next, .swiper-button-prev {
-    top: 50%;
+@media (max-width: 920px) {
+  .title {
+    font-size: 40px;
+    line-height: 50px; /* 133.333% */
+    padding-top: 0px;
   }
-  .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
-    content: '';
-  }
-  .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
-    content: '';
-  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+}
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+}
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: "";
+}
 </style>

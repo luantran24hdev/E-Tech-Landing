@@ -53,7 +53,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-9.png" alt="" />
           <div class="card-item-info">
-            <h5> {{ $tc("Pirates") }}</h5>
+            <h5>{{ $tc("Pirates") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -273,20 +273,22 @@ export default {};
 
       img {
         border-radius: 5px;
-        
+      }
+    }
+    @media (max-width: 980px) {
+      .card-item {
+        margin: 0 auto;
       }
     }
     .card-item:nth-child(2) {
-      margin: 40px 0px;
+      margin: 40px auto;
     }
   }
   //   &-item:nth-child(odd) {
   //     padding-top: 118px;
   //   }
   .item-list {
-
   }
-  
 }
 @media (max-width: 900px) {
   .card {
@@ -301,7 +303,6 @@ export default {};
 }
 @media (max-width: 500px) {
   .card {
-
     .item-list {
       width: 100%;
     }

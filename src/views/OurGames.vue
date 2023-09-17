@@ -1,12 +1,9 @@
 <template>
   <div class="our-games">
     <div class="our-games-info">
-      <h1>Our Games</h1>
+      <h1>{{ $tc("our-games") }}</h1>
       <p>
-        As a pioneer of mobile app gamification, we take pride in originality
-        and individuality, providing global players with state-of-the-art games
-        that feature splendid storylines, sensational sound effects and
-        magnificent animation that never cease to impress.
+        {{ $tc("our-game-title") }}
       </p>
     </div>
     <div class="card">
@@ -14,7 +11,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-11.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("E-Space") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -24,7 +21,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/bitmap.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("Kingland") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -39,7 +36,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-10.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("The Last Game") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -56,7 +53,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-9.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5> {{ $tc("Pirates") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -66,7 +63,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-1.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("Witch Party") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -81,7 +78,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-2.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("E-Space") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -98,7 +95,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-3.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("Rocky") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -108,7 +105,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-4.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("Blue Fire") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -123,7 +120,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-5.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("Magic tree") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -140,7 +137,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-6.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("Aborigines") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -150,7 +147,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-7.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("Witch Party") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -165,7 +162,7 @@
         <div class="card-item">
           <img src="../assets/images/cards/card-8.png" alt="" />
           <div class="card-item-info">
-            <h5>E-Space</h5>
+            <h5>{{ $tc("Cinderella") }}</h5>
             <span
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
@@ -233,7 +230,7 @@ export default {};
   display: flex;
   margin-top: 80px;
 
-  .item-list:nth-child(even) {
+  .item-list:nth-child(odd) {
     margin: 38px 10px;
   }
   .item-list {
@@ -261,24 +258,22 @@ export default {};
           font-style: normal;
           font-weight: 400;
           line-height: 15px; /* 125% */
-          letter-spacing: 0.9px;
+        }
+      }
+      @media (max-width: 980px) {
+        .card-item-info {
+          padding: 20px 12px;
         }
       }
       @media (max-width: 900px) {
         .card-item-info {
-          padding: 20px 12px;
+          padding: 16px;
         }
       }
 
       img {
         border-radius: 5px;
-        background: linear-gradient(
-            0deg,
-            rgba(0, 9, 225, 0.5) 6.79%,
-            rgba(0, 0, 0, 0) 61.34%
-          ),
-          url(<path-to-image>),
-          lightgray -704px -23px / 352.683% 129.107% no-repeat;
+        
       }
     }
     .card-item:nth-child(2) {
@@ -288,6 +283,10 @@ export default {};
   //   &-item:nth-child(odd) {
   //     padding-top: 118px;
   //   }
+  .item-list {
+
+  }
+  
 }
 @media (max-width: 900px) {
   .card {

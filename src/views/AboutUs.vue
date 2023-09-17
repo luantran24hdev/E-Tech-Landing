@@ -2,15 +2,9 @@
   <div class="about-us">
     <div class="about-us__inner">
       <div class="left">
-        <h1 class="transition-all delay-100 duration-75">About Us</h1>
+        <h1 class="transition-all delay-100 duration-75">{{ $tc("nav.about-us") }}</h1>
         <p class="transition-all delay-100 duration-75">
-          Browse our selection of free online games and have a great time
-          without leaving the site! Our Kids Games option also includes game
-          reviews, extensive game cheats and walkthroughs, and much more. We
-          have exclusive free downloads, videos, and articles as well. Etech
-          reviews the most popular kids games from all the most popular video
-          gaming platforms, so you don’t need to search around for fun anywhere
-          else on the Internet. Explore a whole new world of gaming on Etech.
+          {{ $tc("browse-our") }}
         </p>
         <div
           class="left__info flex sm:justify-start justify-around sm:flex-col flex-row"
@@ -28,7 +22,7 @@
                 fill="#079BEE"
               />
             </svg>
-            <span>Users</span>
+            <span>{{ $tc("users") }}</span>
           </div>
           <div class="flex flex-col p">
             <svg
@@ -43,7 +37,7 @@
                 fill="#079BEE"
               />
             </svg>
-            <span>Games</span>
+            <span>{{ $tc("games") }}</span>
           </div>
         </div>
       </div>
@@ -74,10 +68,9 @@
               </svg>
             </div>
             <div class="right__info flex flex-col">
-              <span>24h -hours</span>
+              <span>{{ $tc("games") }}</span>
               <p>
-                24/7 access ensures operators' businesses runs smoothly all year
-                long.
+               {{ $tc("24h") }}
               </p>
             </div>
           </div>
@@ -106,11 +99,9 @@
               </svg>
             </div>
             <div class="right__info flex flex-col">
-              <span>Design</span>
+              <span>{{ $tc("design-title") }}</span>
               <p>
-                Combining imaginative universes, play dynamics, and
-                unprecedented gameplay, our games transcend the boundaries of
-                the virtual world by weaving innovative gameplay.
+                {{ $tc("design") }}
               </p>
             </div>
           </div>
@@ -150,11 +141,9 @@
               </svg>
             </div>
             <div class="right__info flex flex-col">
-              <span>Team</span>
+              <span>{{ $tc("team-title") }}</span>
               <p>
-                Etech is an award-winning, international studio of designers,
-                artists, animators and producers that create content for the
-                biggest names in film and video games.
+                {{ $tc("team") }}
               </p>
             </div>
           </div>

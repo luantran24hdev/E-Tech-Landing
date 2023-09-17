@@ -8,7 +8,19 @@
   </a-select> -->
   <div class="select-language" @click="handleToggle">
     <div class="flag">
-      <img src="../assets/images/flags/usFlag.svg" alt="" />
+      <!-- Display US flag if selectValue is 'en' -->
+      <img
+        v-if="selectValue === 'en'"
+        src="../assets/images/flags/usFlag.svg"
+        alt="US Flag"
+      />
+
+      <!-- Display Vietnamese flag if selectValue is 'vi' -->
+      <img
+        v-else-if="selectValue === 'vi'"
+        src="../assets/images/flags/vieFlag.svg"
+        alt="Vietnamese Flag"
+      />
     </div>
     <img src="../assets/images/arrowDown.svg" alt="" />
     <div class="box-language" v-if="isSelected">
@@ -20,10 +32,10 @@
         />
         <div class="item" @click="setSelectValue('vi')">
           <img src="../assets/images/flags/vieFlag.svg" alt="" />
-          <span class="capitalize">Vietnamese</span>
+          <span class="capitalize">{{ $tc("vietnamese") }}</span>
         </div>
       </div>
-      <hr>
+      <hr />
       <div class="item-list flex items-center">
         <img
           :style="{ opacity: selectValue === 'en' ? 1 : 0 }"
@@ -32,7 +44,7 @@
         />
         <div class="item" @click="setSelectValue('en')">
           <img src="../assets/images/flags/usFlag.svg" alt="" />
-          <span class="capitalize">English</span>
+          <span class="capitalize">{{ $tc("english") }}</span>
         </div>
       </div>
     </div>
@@ -57,7 +69,6 @@ export default {
       this.selectValue = value;
       this.$router.push(`/${value}`);
     },
- 
   },
 };
 </script>
@@ -85,7 +96,7 @@ export default {
     right: 0;
     hr {
       height: 1px;
-      background-color: #C4C4C4;
+      background-color: #c4c4c4;
     }
     .item-list {
       .item {
@@ -102,7 +113,6 @@ export default {
           line-height: 17.5px; /* 175% */
         }
       }
-     
     }
   }
 }

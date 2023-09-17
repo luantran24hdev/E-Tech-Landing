@@ -1,6 +1,6 @@
 <template>
   <div class="bg-our text-center">
-    <div class="title">Our Partners</div>
+    <div class="title">{{ $tc("Our Partners") }}</div>
     <div class="max-w-7xl mx-auto pp">
       <div class="flex justify-between">
         <swiper :options="swiperBrandOptions" class="">

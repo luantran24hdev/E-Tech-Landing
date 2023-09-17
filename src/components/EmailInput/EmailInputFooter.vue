@@ -1,6 +1,6 @@
 <template>
   <div class="form-email__input">
-    <input type="text" placeholder="Enter your email" />
+    <input type="text" :placeholder="$tc('enter-your-email')" />
     <svg
       class="mr-[14px]"
       width="25"

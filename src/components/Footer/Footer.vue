@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray footer">
     <div class="mx-auto max-w-7xl o flex pt-12 py-8 justify-between inner">
-      <div class="sm:w-3/6 w-full m-auto">
+      <div class="sm:w-4/6 w-full mr">
         <div class="w-28 md:w-28 m-auto">
           <img
             class="w-full h-auto object-cover"
@@ -10,9 +10,7 @@
           />
         </div>
         <div class="text-sm text-white py-4 justify-center"></div>
-        <ul
-          class="flex gap-4 text-gray-400 text-sm mr-4 justify-center sm:flex"
-        >
+        <ul class="flex gap-4 text-gray-400 text-sm justify-center sm:flex">
           <li class="hover:text-sky-100">
             <a
               href="https://www.instagram.com/breederapprovednews/?hl=en"
@@ -37,14 +35,14 @@
           </li>
         </ul>
       </div>
-      <div class="sm:w-2/6 w-full m-auto">
-        <div class="text-2xl text-white font-bold">Address</div>
+      <div class="sm:w-4/6 w-full m-auto">
+        <div class="text-2xl text-white font-bold">{{ $tc("Address") }}</div>
 
         <ul class="gap-4 text-sm mr-4 items-center py-4 text-white">
           <li class="hover:text-sky-100 pb-2 flex items-center">
             <img src="../../assets/images/placeIcon.svg" alt="" />
             <a href="/questionaire">
-              Valletta Buildings, South Street, Valletta - VLT 1103 Malta, US
+              {{ $tc("adr-name") }}
             </a>
           </li>
           <li class="hover:text-sky-100 pb-2 flex items-center">
@@ -72,17 +70,14 @@
             </li> -->
         </ul>
       </div>
-      <div class="sm:w-2/6 w-full m-auto">
-        <div class="text-2xl text-white font-bold">Subscriber</div>
+      <div class="sm:w-4/6 w-full mr">
+        <div class="text-2xl text-white font-bold">{{ $tc("Subscriber") }}</div>
 
         <ul class="gap-4 text-sm mr-4 items-center py-4 text-white">
           <li class="hover:text-sky-100 pb-2">
             <a href="https://www.facebook.com/breederapproved" target="_blank">
               <div class="flex sb-text">
-                <span
-                  >Subscribe to our newsletter and be the first to know about
-                  our updates</span
-                >
+                <span>{{ $tc("subscribe-to") }}</span>
               </div>
             </a>
             <EmailInputFooter />
@@ -115,6 +110,12 @@ export default {
   font-family: "Montserrat", sans-serif;
   background-image: url("../../assets/images/bg-footer.png");
   background-size: cover;
+}
+
+@media (max-width: 820px) {
+  .mr {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 820px) {

@@ -2,7 +2,7 @@
   <div :class="classes.root">
     <button
       type="button"
-      class="bg-sky-100 shadow-xl rounded-full w-10 h-10 flex items-center justify-center"
+      class="bg-sky-100 rounded-full w-10 h-10 flex items-center justify-center"
       @click="$emit('click')"
     >
      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">

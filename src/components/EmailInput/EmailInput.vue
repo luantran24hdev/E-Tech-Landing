@@ -1,6 +1,6 @@
 <template>
   <div class="form-email__input">
-    <input type="text" placeholder="Enter your email" />
+    <input type="text" :placeholder="$tc('enter-your-email')" />
     <svg
       class="mr-[14px]"
       width="25"
@@ -33,7 +33,7 @@ export default {
   p {
     width: 560px;
     margin-top: 97px;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

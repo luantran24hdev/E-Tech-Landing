@@ -15,6 +15,7 @@
     <OurGames />
     <OurPartners />
     <Footer />
+    <FooterBottom />
   </div>
 </template>
 <script>
@@ -25,6 +26,7 @@ import AboutUs from "./AboutUs.vue";
 import OurGames from "./OurGames.vue";
 import OurPartners from "./OurPartners.vue";
 import Footer from "../components/Footer/Footer.vue";
+import FooterBottom from "../components/Footer/BottomFooter.vue";
 
 export default {
   components: {
@@ -35,6 +37,7 @@ export default {
     OurGames,
     OurPartners,
     Footer,
+    FooterBottom,
   },
 };
 </script>

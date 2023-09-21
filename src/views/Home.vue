@@ -7,7 +7,7 @@
           {{ $tc("we-re") }}
         </h1>
         <TimeGettingReadyBox />
-        <FormEmail/>
+        <FormEmail />
       </div>
       <img class="old-man" src="../assets/images/oldman.png" alt="" />
     </div>
@@ -16,9 +16,12 @@
     <OurPartners />
     <Footer />
     <FooterBottom />
+
+    <ButtonScroll/>
   </div>
 </template>
 <script>
+import ButtonScroll from "../components/ButtonScroll/ButtonScroll.vue";
 import TimeGettingReadyBox from "../components/TimeGettingReadyBox/TimeGettingReadyBox.vue";
 import Header from "../components/Header/Header.vue";
 import FormEmail from "../components/FormEmail/FormEmail.vue";
@@ -38,7 +41,16 @@ export default {
     OurPartners,
     Footer,
     FooterBottom,
+    ButtonScroll,
   },
+  data() {
+    return {};
+  },
+  computed: {},
+  methods: {
+ 
+  }
+  // Add a scroll event listener to update the button visibility
 };
 </script>
 <style lang="scss" scoped>
@@ -53,6 +65,7 @@ export default {
     position: absolute;
     width: 500px;
     top: 50%;
+    z-index: 2;
   }
   @media (max-width: 620px) {
     .old-man {
@@ -73,6 +86,7 @@ export default {
   .content {
     margin: 0 auto;
     h1 {
+      padding-top: 210px;
       margin-bottom: 21px;
       color: #fff;
       text-align: center;
@@ -111,4 +125,5 @@ export default {
     height: 700px;
   }
 }
+
 </style>

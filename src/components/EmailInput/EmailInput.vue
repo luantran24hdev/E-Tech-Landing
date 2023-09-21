@@ -64,7 +64,10 @@ export default {
       border-radius: 8px;
       width: 100%;
       background: none;
-      color: white;
+      color: #545454;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      z-index: 3;
     }
     @media (max-width: 720px) {
       input {
@@ -75,7 +78,7 @@ export default {
       outline: none;
     }
     ::placeholder {
-      color: white;
+      color: #545454;
 
       /* Montserrat/Regular/14px */
       font-family: "Montserrat", sans-serif;

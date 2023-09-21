@@ -1,5 +1,5 @@
 <template>
-  <div class="about-us">
+  <div class="about-us" id="about-us">
     <div class="about-us__inner">
       <div class="left">
         <h1 class="transition-all delay-100 duration-75">

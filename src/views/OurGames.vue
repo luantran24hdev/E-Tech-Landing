@@ -1,5 +1,5 @@
 <template>
-  <div class="our-games">
+  <div class="our-games" id="our-games">
     <div class="our-games-info">
       <h1>{{ $tc("our-games") }}</h1>
       <p>

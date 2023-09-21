@@ -8,24 +8,13 @@
       </div>
 
       <ul>
-        <li>
-          <router-link to="/about-us" class="hover:text-secondary-300">
-            {{ $tc("nav.about-us") }}
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/our-games" class="hover:text-secondary-300">
-            {{ $tc("nav.games") }}
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/our-partners" class="hover:text-secondary-300">
-            {{ $tc("nav.partners") }}
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/contact-us" class="hover:text-secondary-300">
-            {{ $tc("nav.contact-us") }}
+        <li v-for="navItem in navItems" :key="navItem.route">
+          <router-link
+          active-class="active-link"
+            :to="generateLocalizedRoute(navItem.route)"
+            class="hover:text-secondary-300"
+          >
+            {{ $tc(navItem.translationKey) }}
           </router-link>
         </li>
         <li><SelectLanguage /></li>
@@ -48,24 +37,13 @@
           />
         </div>
         <ul class="navbar-content">
-          <li>
-            <router-link to="/about-us" class="hover:text-secondary-300">
-              {{ $tc("nav.about-us") }}
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/our-games" class="hover:text-secondary-300">
-              {{ $tc("nav.games") }}
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/our-partners" class="hover:text-secondary-300">
-              {{ $tc("nav.partners") }}
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/contact-us" class="hover:text-secondary-300">
-              {{ $tc("nav.contact-us") }}
+          <li v-for="navItem in navItems" :key="navItem.route">
+            <router-link
+            active-class="active-link"
+              :to="generateLocalizedRoute(navItem.route)"
+              class="hover:text-secondary-300"
+            >
+              {{ $tc(navItem.translationKey) }}
             </router-link>
           </li>
         </ul>
@@ -82,7 +60,20 @@ export default {
       isShowNavbar: false,
     };
   },
+  computed: {
+    navItems() {
+      return [
+        { route: "about-us", translationKey: "nav.about-us" },
+        { route: "our-games", translationKey: "nav.games" },
+        { route: "our-partners", translationKey: "nav.partners" },
+        { route: "contact-us", translationKey: "nav.contact-us" },
+      ];
+    },
+  },
   methods: {
+    generateLocalizedRoute(route) {
+      return `/${this.$i18n.locale}/#${route}`;
+    },
     handleToggle() {
       this.isShowNavbar = !this.isShowNavbar;
     },
@@ -96,11 +87,15 @@ export default {
 <style lang="scss" scoped>
 .header {
   width: 100%;
-  margin-bottom: 210px;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999999999;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) -25%, rgba(0, 0, 0, 0.00) 100%);
   li:nth-last-child(1) {
-  margin-top: -8px;
-}
+    margin-top: -8px;
+  }
   .navbar-mobile {
     position: fixed;
     width: 100%;
@@ -124,8 +119,6 @@ export default {
       li {
         padding: 24px 0px;
       }
-     
-
     }
   }
   .navbar {
@@ -182,5 +175,8 @@ export default {
   .header {
     margin-bottom: 40px;
   }
+}
+.active-link {
+  color: #1890ff; /* Change the color to your desired style */
 }
 </style>

@@ -46,7 +46,7 @@
       <div class="right">
         <div class="inner-box">
           <div class="item flex">
-            <img src="../assets/images/abouts/hours.svg" class="image--cover">
+            <img src="../assets/images/abouts/hours.svg" class="image--cover" />
             <div class="right__info flex flex-col">
               <span>{{ $tc("games") }}</span>
               <p>
@@ -56,7 +56,10 @@
           </div>
 
           <div class="item flex">
-            <img src="../assets/images/abouts/design.svg" class="image--cover">
+            <img
+              src="../assets/images/abouts/design.svg"
+              class="image--cover"
+            />
             <div class="right__info flex flex-col">
               <span>{{ $tc("design-title") }}</span>
               <p>
@@ -65,7 +68,7 @@
             </div>
           </div>
           <div class="item flex">
-            <img src="../assets/images/abouts/team.svg" class="image--cover">
+            <img src="../assets/images/abouts/team.svg" class="image--cover" />
             <div class="right__info flex flex-col">
               <span>{{ $tc("team-title") }}</span>
               <p>
@@ -77,13 +80,23 @@
       </div>
     </div>
     <div class="map">
-      <div class="Illustrator transition-all duration-500">
-        <img src="../assets/images/Illustrator.png" alt="" />
+      <!-- test -->
+      <div class="body">
+        <div class="container">
+          <div class="box" id="animatedDiv">
+            <div class="Illustrator transition-all duration-500">
+              <img src="../assets/images/Illustrator.png" alt="" />
+            </div>
+          </div>
+          <div class="earth transition-all duration-500">
+            <img src="../assets/images/pin-map.png" alt="" />
+          </div>
+        </div>
       </div>
 
-      <div class="earth transition-all duration-500">
-        <img src="../assets/images/pin-map.png" alt="" />
-      </div>
+      <!-- <div class="Illustrator transition-all duration-500">
+        <img src="../assets/images/Illustrator.png" alt="" />
+      </div> -->
     </div>
   </div>
 </template>
@@ -92,91 +105,88 @@ export default {};
 </script>
 <style lang="scss" scoped>
 .about-us {
-  padding: 0px 380px;
+  padding: 0 380px;
   margin-top: 160px;
   width: 100%;
+
   &__inner {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     .left,
     .right {
-      width: calc(
-        50% - 20px
-      ); /* Calculate 50% width with some spacing (adjust as needed) */
-      margin-bottom: 20px; /* Add margin between left and right sections (adjust as needed) */
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
 
       @media (max-width: 768px) {
-        width: 100%; /* On screens narrower than 768px, make both sections 100% width */
-        margin-bottom: 10px; /* Adjust the margin as needed for smaller screens */
+        width: 100%;
+        margin-bottom: 10px;
       }
     }
+
     .left {
       h1 {
         color: #000;
         font-family: "Playfair Display", serif;
         font-size: 60px;
-        font-style: normal;
         font-weight: 900;
-        line-height: 60px; /* 100% */
+        line-height: 60px;
         letter-spacing: 3.6px;
         margin-bottom: 40px;
+
+        @media (max-width: 900px) {
+          font-size: 40px;
+          margin-bottom: 25px;
+          line-height: 30px;
+        }
       }
 
       p {
         color: #757575;
         font-family: "Montserrat", sans-serif;
         font-size: 14px;
-        font-style: normal;
         font-weight: 400;
-        line-height: 140%; /* 19.6px */
+        line-height: 140%;
         margin-bottom: 80px;
       }
-      @media (max-width: 900px) {
-        h1 {
-          color: #000;
-          font-family: "Playfair Display", serif;
-          font-size: 40px;
-          margin-bottom: 25px;
-          line-height: 30px;
-        }
-        p {
-          margin-bottom: 40px;
-        }
-      }
+
       &__info {
         span {
           font-family: "Montserrat", sans-serif;
           font-size: 24px;
-          font-style: normal;
           font-weight: 700;
-          line-height: 30px; /* 125% */
+          line-height: 30px;
           margin-top: 10px;
-        }
-        @media (max-width: 900px) {
-          svg {
-            width: 200px;
+
+          @media (max-width: 900px) {
+            svg {
+              width: 200px;
+            }
+            span {
+              margin-top: 0;
+            }
           }
-          span {
-            margin-top: 0px;
+
+          @media (max-width: 500px) {
+            svg {
+              width: 120px;
+            }
           }
         }
-        @media (max-width: 500px) {
-          svg {
-            width: 120px;
-          }
-        }
+
         @media (max-width: 900px) {
           .p {
             svg {
               width: 120px;
             }
             span {
-              margin-top: 0px;
+              margin-top: 0;
             }
           }
         }
+
         @media (max-width: 500px) {
           .p {
             svg {
@@ -186,15 +196,17 @@ export default {};
         }
       }
     }
-    .right {
-      //   margin-left: 40px;
 
+    .right {
       background-color: #eee;
+
       .inner-box {
         padding: 113px 75px;
+
         .item:nth-child(2) {
-          margin: 40px 0px;
+          margin: 40px 0;
         }
+
         .circle {
           border-radius: 50%;
           background-color: #e3fcff;
@@ -214,41 +226,41 @@ export default {};
             transform: translate(-50%, -50%);
           }
         }
+
         @media (max-width: 1400px) {
           // .circle {
           //   height: 40px;
           //   width: 40px;
           // }
         }
+
         .right__info {
           padding-left: 24px;
+
           span {
             color: #000;
-
-            /* Montserrat/Bold/24px */
             font-family: "Montserrat", sans-serif;
             font-size: 24px;
-
             font-weight: 700;
-            line-height: 30px; /* 125% */
+            line-height: 30px;
           }
+
           p {
             color: #757575;
-
-            /* Montserrat/Regular/14px */
             font-family: "Montserrat", sans-serif;
             font-size: 14px;
-
             font-weight: 400;
-            line-height: 140%; /* 19.6px */
+            line-height: 140%;
           }
         }
       }
+
       @media (max-width: 1400px) {
         .inner-box {
           padding: 10%;
         }
       }
+
       @media (max-width: 775px) {
         .inner-box {
           padding: 50px 26px;
@@ -256,23 +268,27 @@ export default {};
       }
     }
   }
+
   .map {
     text-align: center;
 
     .Illustrator {
       width: 533px;
       margin: 0 auto;
-      height: 437px;
+      height: 637px;
       z-index: 1000;
+
       img {
         width: 100%;
       }
     }
+
     .earth {
       width: 1160px;
-      height: 428px;
+      height: 228px;
       z-index: 1;
       margin: -150px auto;
+
       img {
         width: 100%;
       }
@@ -282,18 +298,22 @@ export default {};
       .Illustrator {
         width: 40%;
       }
+
       .earth {
         width: 100%;
       }
     }
+
     @media (max-width: 980px) {
       .earth {
         margin: -260px auto;
       }
     }
+
     @media (max-width: 580px) {
       .earth {
-        margin: -350px auto;
+        margin: 0 auto;
+        padding-top: 85px;
       }
     }
   }
@@ -301,43 +321,26 @@ export default {};
   .map {
     width: 100%;
   }
-
-  .Illustrator {
-    width: 533px;
-    margin: 0 auto;
-    height: 437px;
-
-    position: relative; /* Position the box absolutely within the container */
-    animation: moveBox 4s linear infinite; /* 4s duration, linear timing, infinite loop */
-  }
-
-  //   @keyframes moveBox {
-  //     0% {
-  //       transform: translateX(50%); /* Start from the current position */
-  //     }
-  //     50% {
-  //       transform: translateX(100%); /* Move to the right edge of the container */
-  //     }
-  //     100% {
-  //       transform: translateX(50%); /* Move back to the current position */
-  //     }
-  //   }
 }
+
 @media (max-width: 1608px) {
   .about-us {
-    padding: 0px;
+    padding: 0;
   }
 }
+
 @media (max-width: 628px) {
   .about-us {
     margin-top: 100px;
   }
 }
+
 @media (max-width: 428px) {
   .about-us {
     margin-top: 20px;
   }
 }
+
 .image--cover {
   width: 50px;
   padding: 12px;
@@ -346,5 +349,120 @@ export default {};
   object-fit: cover;
   object-position: center right;
   background: #e3fcff;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    @media (max-width: 1200px) {
+      height: 60vh;
+      transition: .25s all ease;
+    }
+
+    @media (max-width: 980px) {
+      height: 40vh;
+      transition: .25s all ease;
+    }
+
+    @media (max-width: 580px) {
+      height: 30vh;
+      transition: .25s all ease;
+    }
+  }
+
+  .box {
+    z-index: 10;
+    width: 469px;
+    position: absolute;
+    animation: moveLeftRight 4s ease-in-out infinite, turnHead 2s infinite;
+
+    .Illustrator {
+      width: 533px;
+      margin: 0 auto;
+      height: 637px;
+      z-index: 1000;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .Illustrator {
+        width: 50%;
+        height: 437px;
+      }
+
+      .earth {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .Illustrator {
+        width: 40%;
+        height: 337px;
+      }
+
+      .earth {
+        margin: -260px auto;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .Illustrator {
+        width: 30%;
+        height: 237px;
+        transition: .25s all ease;
+      }
+
+      .earth {
+        margin: 0 auto;
+        padding-top: 85px;
+        transition: .25s all ease;
+      }
+    }
+  }
+}
+
+@keyframes moveLeftRight {
+  0%,
+  100% {
+    left: 0;
+  }
+
+  50% {
+    left: calc(100% - 469px);
+  }
+}
+
+@keyframes turnHead {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(30deg);
+  }
 }
 </style>

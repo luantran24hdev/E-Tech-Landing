@@ -195,7 +195,7 @@ export default {};
   width: 860px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 128px;
+
   h1 {
     color: #000;
 

@@ -52,11 +52,10 @@ export default {
 <style scoped lang="scss">
 #scroll-button {
   position: fixed;
-  width: 80px;
-  right: 20px;
+  width: 40px;
+  right: 10px;
   bottom: 60%;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   z-index: 10000000000000;
